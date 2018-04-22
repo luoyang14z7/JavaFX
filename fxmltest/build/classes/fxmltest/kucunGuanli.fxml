@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmltest.kucunGuanli">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="186.0" layoutY="14.0" prefHeight="65.0" prefWidth="448.0" text="库存管理" textAlignment="CENTER">
+         <font>
+            <Font name="STXihei" size="28.0" />
+         </font></Label>
+      <GridPane gridLinesVisible="true" layoutX="143.0" layoutY="86.0" prefHeight="493.0" prefWidth="555.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="262.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="199.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="68.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="309.0" text="库存商品">
+               <font>
+                  <Font name="STXihei" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="boba" alignment="CENTER" prefHeight="33.0" prefWidth="315.0" text="波霸" GridPane.rowIndex="1">
+               <font>
+                  <Font name="STXihei" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="250.0" text="库存余货" GridPane.columnIndex="1">
+               <font>
+                  <Font name="STXihei" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="183.0" text="单位" GridPane.columnIndex="2">
+               <font>
+                  <Font name="STXihei" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="198.0" text="袋" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="zhishi" alignment="CENTER" prefHeight="33.0" prefWidth="357.0" text="芝士" GridPane.rowIndex="2">
+               <font>
+                  <Font name="STXihei" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="hongcha" alignment="CENTER" prefHeight="33.0" prefWidth="336.0" text="努瓦拉红茶" GridPane.rowIndex="3">
+               <font>
+                  <Font name="STXihei" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="lvcha" alignment="CENTER" prefHeight="33.0" prefWidth="334.0" text="四季春茶" GridPane.rowIndex="4">
+               <font>
+                  <Font name="STXihei" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="ningmeng" alignment="CENTER" prefHeight="33.0" prefWidth="325.0" text="柠檬" GridPane.rowIndex="5">
+               <font>
+                  <Font name="STXihei" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="jinju" alignment="CENTER" prefHeight="33.0" prefWidth="276.0" text="金桔" GridPane.rowIndex="6">
+               <font>
+                  <Font name="STXihei" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="niunai" alignment="CENTER" prefHeight="33.0" prefWidth="308.0" text="牛奶" GridPane.rowIndex="7">
+               <font>
+                  <Font name="STXihei" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="hongdou" alignment="CENTER" prefHeight="33.0" prefWidth="288.0" text="红豆" GridPane.rowIndex="8">
+               <font>
+                  <Font name="STXihei" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="guotang" alignment="CENTER" prefHeight="33.0" prefWidth="366.0" text="果糖" GridPane.rowIndex="9">
+               <font>
+                  <Font name="STXihei" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="198.0" text="块" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="198.0" text="袋" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="198.0" text="袋" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="198.0" text="KG" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="198.0" text="KG" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="198.0" text="盒" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="198.0" text="罐" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="198.0" text="瓶" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <TextField fx:id="num1" alignment="CENTER" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="num2" alignment="CENTER" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="num3" alignment="CENTER" text="3" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="num4" alignment="CENTER" text="4" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="num5" alignment="CENTER" text="5" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="num6" alignment="CENTER" text="6" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="num7" alignment="CENTER" text="7" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="num8" alignment="CENTER" text="8" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="num9" alignment="CENTER" text="9" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <Label alignment="CENTER_RIGHT" layoutX="428.0" layoutY="590.0" prefHeight="19.0" prefWidth="136.0" text="最后一次修改时间:" />
+      <Label fx:id="time" layoutX="564.0" layoutY="590.0" prefHeight="19.0" prefWidth="172.0" text="2018-3-12-14:04" />
+      <Button onAction="#save" fx:id="save" layoutX="225.0" layoutY="636.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="118.0" text="保存" />
+      <Button onAction="#clearall" fx:id="clearall"  layoutX="457.0" layoutY="636.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="118.0" text="清空" />
+   </children>
+</AnchorPane>

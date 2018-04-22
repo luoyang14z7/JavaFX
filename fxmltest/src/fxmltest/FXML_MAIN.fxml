@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmltest.MainController">
+   <children>
+      <HBox prefHeight="32.0" prefWidth="1400.0" style="-fx-border-style: solid; -fx-border-color: black;">
+         <children>
+            <MenuBar prefHeight="32.0" prefWidth="1400.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="管理">
+                  <items>
+                    <MenuItem fx:id="kucun" mnemonicParsing="false" text="库存管理" />
+                        <MenuItem fx:id="useradmin" mnemonicParsing="false" text="用户管理" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="查看">
+                  <items>
+                        <MenuItem fx:id="dingdan" mnemonicParsing="false" text="查看订单" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="系统">
+                  <items>
+                    <MenuItem fx:id="about" mnemonicParsing="false" text="About" />
+                        <MenuItem fx:id="exit" mnemonicParsing="false" text="退出系统" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <HBox layoutY="33.0" prefHeight="553.0" prefWidth="800.0" style="-fx-border-color: black; -fx-border-style: solid;">
+         <children>
+            <TabPane prefHeight="498.0" prefWidth="805.0" style="-fx-font-size: 18;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab style="-fx-font-family: STFangsong; -fx-font-size: 22; -fx-padding: 10 15 15 15;" text="奶霜系列">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="564.0">
+                           <children>
+                              <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="4.0" layoutY="10.0" opacity="0.75" prefHeight="487.0" prefWidth="790.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Button fx:id="naishuang1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naishuang1" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffff;" textAlignment="CENTER" />
+                                    <Button fx:id="naishuang2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naishuang2" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffa5;" textAlignment="CENTER" GridPane.columnIndex="1" />
+                                    <Button fx:id="naishuang3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naishuang3" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #88d42d;" textAlignment="CENTER" GridPane.columnIndex="2" />
+                                    <Button fx:id="naishuang4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naishuang4" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #47ff00;" textAlignment="CENTER" GridPane.columnIndex="3" />
+                                    <Button fx:id="naishuang5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naishuang5" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #a4c2f4;" textAlignment="CENTER" GridPane.rowIndex="1" />
+                                    <Button fx:id="naishuang6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naishuang6" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #93c47d;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Button fx:id="naishuang7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naishuang7" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #f9cb9c;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Button fx:id="naishuang8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naishuang8" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff3;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Button fx:id="naishuang9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff98ce;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Button fx:id="naishuang10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #56f056;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button fx:id="naishuang11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff65ff;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Button fx:id="naishuang12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #e6b8af;" textAlignment="CENTER" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab style="-fx-font-family: STFangsong; -fx-font-size: 22; -fx-padding: 10 15 15 15;" text="经典奶茶">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="564.0">
+                           <children>
+                              <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="4.0" layoutY="10.0" opacity="0.75" prefHeight="487.0" prefWidth="790.0">
+                                 <children>
+                                    <Button fx:id="naicha1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha1" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffff;" textAlignment="CENTER" />
+                                    <Button fx:id="naicha2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha2" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffa5;" textAlignment="CENTER" GridPane.columnIndex="1" />
+                                    <Button fx:id="naicha3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha3" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #88d42d;" textAlignment="CENTER" GridPane.columnIndex="2" />
+                                    <Button fx:id="naicha4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha4" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #47ff00;" textAlignment="CENTER" GridPane.columnIndex="3" />
+                                    <Button fx:id="naicha5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha5" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #a4c2f4;" textAlignment="CENTER" GridPane.rowIndex="1" />
+                                    <Button fx:id="naicha6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha6" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #93c47d;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Button fx:id="naicha7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha7" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #f9cb9c;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Button fx:id="naicha8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha8" prefHeight="153.0" prefWidth="205.0" style="-fx-background-color: #ff3;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Button fx:id="naicha9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha9" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #e6b8af;" textAlignment="CENTER" GridPane.rowIndex="2" />
+                                    <Button fx:id="naicha10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Naicha10" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff98ce;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Button fx:id="naicha11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #56f056;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button fx:id="naicha12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff65ff;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-font-family: STFangsong; -fx-font-size: 22; -fx-padding: 10 15 15 15;" text="缤纷水果茶">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="564.0">
+                           <children>
+                              <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="4.0" layoutY="10.0" opacity="0.75" prefHeight="487.0" prefWidth="790.0">
+                                 <children>
+                                    <Button fx:id="shuiguo1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo1" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffff;" textAlignment="CENTER" />
+                                    <Button fx:id="shuiguo2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo2" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffa5;" textAlignment="CENTER" GridPane.columnIndex="1" />
+                                    <Button fx:id="shuiguo3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo3" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #88d42d;" textAlignment="CENTER" GridPane.columnIndex="2" />
+                                    <Button fx:id="shuiguo4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo4" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #47ff00;" textAlignment="CENTER" GridPane.columnIndex="3" />
+                                    <Button fx:id="shuiguo5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo5" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #a4c2f4;" textAlignment="CENTER" GridPane.rowIndex="1" />
+                                    <Button fx:id="shuiguo6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo6" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #93c47d;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Button fx:id="shuiguo7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo7" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #f9cb9c;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Button fx:id="shuiguo8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo8" prefHeight="153.0" prefWidth="205.0" style="-fx-background-color: #ff3;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Button fx:id="shuiguo9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo9" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #e6b8af;" textAlignment="CENTER" GridPane.rowIndex="2" />
+                                    <Button fx:id="shuiguo10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Shuiguo10" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff98ce;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Button fx:id="shuiguo11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #56f056;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button fx:id="shuiguo12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff65ff;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-font-family: STFangsong; -fx-font-size: 22; -fx-padding: 10 15 15 15;" text="咖啡·拿铁">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="564.0">
+                           <children>
+                              <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="4.0" layoutY="10.0" opacity="0.75" prefHeight="487.0" prefWidth="790.0">
+                                 <children>
+                                    <Button fx:id="kafei1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Kafei1" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffff;" textAlignment="CENTER" />
+                                    <Button fx:id="kafei2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Kafei2" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffa5;" textAlignment="CENTER" GridPane.columnIndex="1" />
+                                    <Button fx:id="kafei3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Kafei3" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #88d42d;" textAlignment="CENTER" GridPane.columnIndex="2" />
+                                    <Button fx:id="kafei4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Kafei4" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #47ff00;" textAlignment="CENTER" GridPane.columnIndex="3" />
+                                    <Button fx:id="kafei5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Kafei5" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #a4c2f4;" textAlignment="CENTER" GridPane.rowIndex="1" />
+                                    <Button fx:id="kafei6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Kafei6" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #93c47d;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Button fx:id="kafei7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Kafei7" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #f9cb9c;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Button fx:id="kafei8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="153.0" prefWidth="205.0" style="-fx-background-color: #ff3;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Button fx:id="kafei9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #e6b8af;" textAlignment="CENTER" GridPane.rowIndex="2" />
+                                    <Button fx:id="kafei10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff98ce;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Button fx:id="kafei11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #56f056;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button fx:id="kafei12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff65ff;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-font-family: STFangsong; -fx-font-size: 22; -fx-padding: 10 15 15 15;" text="酷爽冰沙">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="564.0">
+                           <children>
+                              <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="4.0" layoutY="10.0" opacity="0.75" prefHeight="487.0" prefWidth="790.0">
+                                 <children>
+                                    <Button fx:id="bingsha1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Bingsha1" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffff;" textAlignment="CENTER" />
+                                    <Button fx:id="bingsha2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Bingsha2" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffa5;" textAlignment="CENTER" GridPane.columnIndex="1" />
+                                    <Button fx:id="bingsha3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Bingsha3" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #88d42d;" textAlignment="CENTER" GridPane.columnIndex="2" />
+                                    <Button fx:id="bingsha4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Bingsha4" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #47ff00;" textAlignment="CENTER" GridPane.columnIndex="3" />
+                                    <Button fx:id="bingsha5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Bingsha5" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #a4c2f4;" textAlignment="CENTER" GridPane.rowIndex="1" />
+                                    <Button fx:id="bingsha6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Bingsha6" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #93c47d;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Button fx:id="bingsha7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Bingsha7" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #f9cb9c;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Button fx:id="bingsha8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Bingsha8" prefHeight="153.0" prefWidth="205.0" style="-fx-background-color: #ff3;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Button fx:id="bingsha9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #e6b8af;" textAlignment="CENTER" GridPane.rowIndex="2" />
+                                    <Button fx:id="bingsha10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff98ce;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Button fx:id="bingsha11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #56f056;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button fx:id="bingsha12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff65ff;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-font-family: STFangsong; -fx-font-size: 22; -fx-padding: 10 15 15 15;" text="餐后甜品">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="564.0">
+                           <children>
+                              <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="4.0" layoutY="10.0" opacity="0.75" prefHeight="487.0" prefWidth="790.0">
+                                 <children>
+                                    <Button fx:id="tianpin1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Tianpin1" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffff;" textAlignment="CENTER" />
+                                    <Button fx:id="tianpin2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Tianpin2" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #00ffa5;" textAlignment="CENTER" GridPane.columnIndex="1" />
+                                    <Button fx:id="tianpin3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Tianpin3" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #88d42d;" textAlignment="CENTER" GridPane.columnIndex="2" />
+                                    <Button fx:id="tianpin4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Tianpin4" prefHeight="152.0" prefWidth="194.0" style="-fx-background-color: #47ff00;" textAlignment="CENTER" GridPane.columnIndex="3" />
+                                    <Button fx:id="tianpin5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Tianpin5" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #a4c2f4;" textAlignment="CENTER" GridPane.rowIndex="1" />
+                                    <Button fx:id="tianpin6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Tianpin6" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #93c47d;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Button fx:id="tianpin7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #f9cb9c;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Button fx:id="tianpin8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="153.0" prefWidth="205.0" style="-fx-background-color: #ff3;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Button fx:id="tianpin9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #e6b8af;" textAlignment="CENTER" GridPane.rowIndex="2" />
+                                    <Button fx:id="tianpin10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff98ce;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Button fx:id="tianpin11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #56f056;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button fx:id="tianpin12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="152.0" prefWidth="205.0" style="-fx-background-color: #ff65ff;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#1b1515" spread="0.31" />
+               </effect>
+            </TabPane>
+         </children>
+      </HBox>
+      <HBox layoutY="585.0" prefHeight="315.0" prefWidth="800.0" style="-fx-border-color: black;">
+         <children>
+            <AnchorPane prefHeight="313.0" prefWidth="1017.0">
+               <children>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="4.0" prefHeight="313.0" prefWidth="790.0" style="-fx-background-color: #d9d9d9;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="79.0" prefWidth="150.0" style="-fx-background-color: #ffd966;" text="甜度" textAlignment="CENTER">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#wutang" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="无糖" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="79.0" prefWidth="150.0" style="-fx-background-color: #ffd966;" text="温度" textAlignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="79.0" prefWidth="150.0" style="-fx-background-color: #ffd966;" text="加料" textAlignment="CENTER" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#jiabing" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="加冰" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sanfen" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="三分" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#shaobing" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="少冰" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#wufen" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="五分" textAlignment="CENTER" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#qubing" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="去冰" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#qifen" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="七分" textAlignment="CENTER" GridPane.columnIndex="4">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#wen" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="温" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#zhengchang" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="正常" textAlignment="CENTER" GridPane.columnIndex="5">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#re" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="热" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#boba" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="波霸" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buding" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="布丁" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#hongdou" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="红豆" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#yeguo" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="椰果" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#xiaoyuyuan" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="小芋圆" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#qguo" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #fff2cc;" text="Q果" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #ffd966;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #ffd966;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #ffd966;" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #ffd966;" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STFangsong" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="150.0" style="-fx-background-color: #ffd966;" textAlignment="CENTER" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STFangsong" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+      <HBox layoutX="800.0" layoutY="34.0" prefHeight="87.0" prefWidth="602.0" style="-fx-border-color: black;">
+         <children>
+            <AnchorPane prefHeight="87.0" prefWidth="619.0">
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="87.0" prefWidth="600.0" style="-fx-background-color: #73fbfb;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="257.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="343.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="37.0" prefWidth="309.0" text="欢迎使用" textAlignment="CENTER">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" prefHeight="37.0" prefWidth="347.0" text="本POS系统！" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="37.0" prefWidth="309.0" text="当前日期：" textAlignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="MAIN_Date" alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="331.0" text="user1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="37.0" prefWidth="309.0" text="当前时间：" textAlignment="CENTER" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="MAIN_Time" alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="347.0" text="5:46" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+      <HBox layoutX="800.0" layoutY="123.0" prefHeight="499.0" prefWidth="600.0" style="-fx-border-color: black;">
+         <children>
+            <AnchorPane prefHeight="497.0" prefWidth="611.0">
+               <children>
+                  <GridPane gridLinesVisible="true" layoutY="-2.0" prefHeight="499.0" prefWidth="598.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="49.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="185.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="39.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="76.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="196.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="56.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="86.0" text="编号" />
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="244.0" text="商品名称" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="86.0" text="数量" GridPane.columnIndex="2" />
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="价格" GridPane.columnIndex="3" />
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="273.0" text="总计(RMB)：" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                        <Label fx:id="preall" alignment="CENTER" prefHeight="19.0" prefWidth="183.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="32.0" />
+                           </font></Label>
+                        <Label fx:id="pre1" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label fx:id="num1" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label fx:id="shopname1" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="id1" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="1" />
+                        <Label fx:id="id2" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="2" />
+                        <Label fx:id="shopname2" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="num2" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label fx:id="pre2" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#delete1" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#delete2" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="操作" GridPane.columnIndex="5" />
+                        <Button fx:id="clearall" mnemonicParsing="false" onAction="#clearall" prefHeight="29.0" prefWidth="132.0" text="清空" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="备注" GridPane.columnIndex="4" />
+                        <Label fx:id="beizhu1" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Label fx:id="id3" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="3" />
+                        <Label fx:id="id4" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="4" />
+                        <Label fx:id="id5" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="5" />
+                        <Label fx:id="shopname3" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="shopname4" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="shopname5" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="num3" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label fx:id="num4" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label fx:id="num5" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Label fx:id="pre3" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label fx:id="pre4" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Label fx:id="pre5" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Label fx:id="mess1" alignment="CENTER" prefHeight="19.0" prefWidth="194.0" text="提示" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+                        <Label fx:id="id6" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="6" />
+                        <Label fx:id="shopname6" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="num6" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <Label fx:id="pre6" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                        <Label fx:id="id7" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="7" />
+                        <Label fx:id="id8" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="8" />
+                        <Label fx:id="id9" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="9" />
+                        <Label fx:id="id10" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="10" />
+                        <Label fx:id="id11" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.rowIndex="11" />
+                        <Label fx:id="shopname7" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="shopname8" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label fx:id="shopname9" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label fx:id="shopname10" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label fx:id="shopname11" alignment="CENTER" prefHeight="19.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label fx:id="num7" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Label fx:id="num8" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                        <Label fx:id="num9" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <Label fx:id="num10" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <Label fx:id="num11" alignment="CENTER" prefHeight="19.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                        <Label fx:id="pre7" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                        <Label fx:id="pre8" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                        <Label fx:id="pre9" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                        <Label fx:id="pre10" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                        <Label fx:id="pre11" alignment="CENTER" prefHeight="19.0" prefWidth="174.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                        <Button mnemonicParsing="false" onAction="#delete3" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#delete4" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#delete5" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#delete6" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#delete7" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#delete8" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#delete9" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#delete10" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                        <Button mnemonicParsing="false" onAction="#delete11" prefHeight="29.0" prefWidth="132.0" text="删除" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+                        <Label fx:id="beizhu2" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label fx:id="beizhu3" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Label fx:id="beizhu4" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Label fx:id="beizhu5" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                        <Label fx:id="beizhu6" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                        <Label fx:id="beizhu7" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                        <Label fx:id="beizhu8" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                        <Label fx:id="beizhu9" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                        <Label fx:id="beizhu10" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+                        <Label fx:id="beizhu11" alignment="CENTER" prefHeight="19.0" prefWidth="166.0" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+      <HBox layoutX="800.0" layoutY="620.0" prefHeight="280.0" prefWidth="600.0" style="-fx-border-color: black;">
+         <children>
+            <AnchorPane prefHeight="278.0" prefWidth="631.0">
+               <children>
+                  <GridPane gridLinesVisible="true" layoutY="45.0" prefHeight="233.0" prefWidth="598.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="25.0" prefWidth="0.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#weixin" prefHeight="76.0" prefWidth="156.0" text="微信付款" textAlignment="CENTER" GridPane.columnIndex="5">
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#zhifubao" prefHeight="76.0" prefWidth="156.0" text="支付宝付款" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#dazhong" prefHeight="76.0" prefWidth="156.0" text="大众点评" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#xianjin" prefHeight="76.0" prefWidth="156.0" text="现金付款" textAlignment="CENTER" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#meituan" prefHeight="76.0" prefWidth="156.0" text="美团" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="4" textAlignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan2"  alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="2" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#free" prefHeight="76.0" prefWidth="156.0" text="赠饮" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="1" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tuangou" prefHeight="76.0" prefWidth="156.0" text="团购" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="3" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="7" textAlignment="CENTER" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan0" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuanclear" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="清空" textAlignment="CENTER" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#jisuan" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="76.0" prefWidth="156.0" text="计算" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font> 
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="50.0" textAlignment="CENTER" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="50.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="50.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="50.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <GridPane gridLinesVisible="true" layoutX="-1.0" prefHeight="44.0" prefWidth="598.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="220.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="378.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="zhi" alignment="CENTER" prefHeight="31.0" prefWidth="636.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="31.0" prefWidth="636.0" text="找零：" textAlignment="CENTER">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+   </children> 
+</AnchorPane>

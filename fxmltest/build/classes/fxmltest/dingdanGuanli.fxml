@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmltest.dingdanGuanli">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="296.0" layoutY="14.0" prefHeight="65.0" prefWidth="448.0" text="查看订单信息" textAlignment="CENTER">
+         <font>
+            <Font name="STXihei" size="28.0" />
+         </font></Label>
+     
+      <Accordion layoutX="116.0" layoutY="149.0" prefHeight="630.0" prefWidth="836.0">
+        <panes>
+          <TitledPane animated="false" text="芝士·奶霜系列" underline="true">
+               <font>
+                  <Font name="STXihei" size="19.0" />
+               </font>
+               <content>
+                  <GridPane gridLinesVisible="true" prefHeight="377.0" prefWidth="625.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="383.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="197.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="226.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="425.0" text="商品名">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售数量" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售金额" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="芝士·白桃乌龙" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="芝士·和风抹茶" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="芝士·轻乌龙" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="芝士·茉莉绿妍" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="芝士·四季春" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="芝士·荔枝乌龙" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="芝士·醇香可可" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="1/2の诱惑" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangnum1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangnum2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangnum3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangnum4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangnum5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangnum6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangnum7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangnum8" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangpre1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangpre2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangpre3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangpre4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangpre5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangpre6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangpre7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naishuangpre8" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="经典奶茶系列" underline="true">
+               <font>
+                  <Font name="STXihei" size="19.0" />
+               </font>
+               <content>
+                  <GridPane gridLinesVisible="true" prefHeight="377.0" prefWidth="625.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="425.0" text="商品名">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售数量" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售金额" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="努瓦拉醇香奶茶" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="四季春奶绿" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="黄金波霸奶茶" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="红豆乌龙奶茶" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="招牌小芋圆奶茶" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="海盐芝士奶茶" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="全套奶茶" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="红豆奶茶" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum8" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre8" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="椰果奶茶" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="布丁奶茶" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum9" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichanum10" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre9" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="naichapre10" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="383.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="197.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="226.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="缤纷水果茶系列" underline="true">
+               <font>
+                  <Font name="STXihei" size="19.0" />
+               </font>
+               <content>
+                  <GridPane gridLinesVisible="true" prefHeight="377.0" prefWidth="625.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="425.0" text="商品名">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售数量" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售金额" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="鲜桔柠檬汁" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="冰柠檬·红茶" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="冰柠檬·四季春" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="波霸轻乌龙" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="百香凤梨水果茶" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="金桔柠檬水果茶" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="桃乐柚柚水果茶" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="蜂蜜柚子水果茶" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum8" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre8" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="鲜榨一颗柠檬" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="满满红柚四季春" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum9" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguonum10" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre9" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shuiguopre10" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="383.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="197.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="226.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="咖啡·拿铁系列" underline="true">
+               <font>
+                  <Font name="STXihei" size="19.0" />
+               </font>
+               <content>
+                  <GridPane gridLinesVisible="true" prefHeight="377.0" prefWidth="625.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="425.0" text="商品名">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售数量" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售金额" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="努瓦拉红茶拿铁" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="和风抹茶拿铁" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="可可芭蕾拿铁" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="现磨咖啡拿铁" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="特调现磨咖啡" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="特调云朵咖啡" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="经典美式咖啡" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeinum1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeinum2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeinum3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeinum4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeinum5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeinum6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeinum7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeipre1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeipre2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeipre3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeipre4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeipre5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeipre6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="kafeipre7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="383.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="197.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="226.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="酷爽冰沙系列" underline="true">
+               <font>
+                  <Font name="STXihei" size="19.0" />
+               </font>
+               <content>
+                  <GridPane gridLinesVisible="true" prefHeight="377.0" prefWidth="625.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="425.0" text="商品名">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售数量" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售金额" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="抹茶鲜奶思慕雪" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="可可鲜奶思慕雪" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="芒果鲜奶思慕雪" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="红豆鲜奶思慕雪" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="超级芒果百乐冰" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="和风抹茶百乐冰" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="可可牛奶百乐冰" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="红豆牛奶百乐冰" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshanum1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshanum2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshanum3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshanum4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshanum5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshanum6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshanum7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshanum8" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshapre1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshapre2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshapre3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshapre4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshapre5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshapre6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshapre7" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bingshapre8" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="383.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="197.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="226.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="餐后甜品系列" underline="true">
+               <font>
+                  <Font name="STXihei" size="19.0" />
+               </font>
+               <content>
+                  <GridPane gridLinesVisible="true" prefHeight="377.0" prefWidth="625.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="425.0" text="商品名">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售数量" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="336.0" text="销售金额" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="杨枝甘露" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="多芒小丸子" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="多芒红豆捞" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="榴莲蜜月" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="黄桃班戟" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="榴莲巧克力千层" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinnum1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinnum2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinnum3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinnum4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinnum5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinnum6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinpre1" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinpre2" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinpre3" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinpre4" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinpre5" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tianpinpre6" alignment="CENTER" prefHeight="27.0" prefWidth="400.0" text="0   RMB" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="STXihei" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="383.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.0" minWidth="10.0" prefWidth="197.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="610.0" minWidth="10.0" prefWidth="226.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <Label alignment="CENTER_RIGHT" layoutX="242.0" layoutY="811.0" prefHeight="21.0" prefWidth="119.0" text="微信收款:">
+         <font>
+            <Font name="STXihei" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="weixin" layoutX="368.0" layoutY="816.0" prefHeight="19.0" prefWidth="79.0" text="错误  RMB" />
+      <Label layoutX="368.0" layoutY="851.0" prefHeight="19.0" prefWidth="91.0" text="错误   RMB" fx:id="xianjin" />
+      <Label alignment="CENTER_RIGHT" layoutX="242.0" layoutY="846.0" prefHeight="27.0" prefWidth="119.0" text="现金收款:">
+         <font>
+            <Font name="STXihei" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="515.0" layoutY="811.0" prefHeight="27.0" prefWidth="119.0" text="支付宝收款:">
+         <font>
+            <Font name="STXihei" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="zhifubao" layoutX="641.0" layoutY="815.0" prefHeight="19.0" prefWidth="79.0" text="错误   RMB" />
+      <Label alignment="CENTER_RIGHT" layoutX="496.0" layoutY="846.0" prefHeight="27.0" prefWidth="119.0" text="大众点评:">
+         <font>
+            <Font name="STXihei" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dazhong" layoutX="623.0" layoutY="851.0" prefHeight="19.0" prefWidth="79.0" text="错误   RMB" />
+      <Label alignment="CENTER_RIGHT" layoutX="242.0" layoutY="880.0" prefHeight="27.0" prefWidth="119.0" text="美团收款:">
+         <font>
+            <Font name="STXihei" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="meituan" layoutX="368.0" layoutY="884.0" prefHeight="19.0" prefWidth="91.0" text="错误   RMB" />
+      <Label alignment="CENTER_RIGHT" layoutX="496.0" layoutY="879.0" prefHeight="27.0" prefWidth="119.0" text="团购收款:">
+         <font>
+            <Font name="STXihei" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tuangou" layoutX="623.0" layoutY="883.0" prefHeight="19.0" prefWidth="79.0" text="错误   RMB" />
+      <Label alignment="CENTER_RIGHT" layoutX="764.0" layoutY="807.0" prefHeight="27.0" prefWidth="79.0" text="总收款:">
+         <font>
+            <Font name="STXihei" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="all" layoutX="843.0" layoutY="811.0" prefHeight="19.0" prefWidth="91.0" text="错误   RMB" />
+      <Label alignment="CENTER_RIGHT" layoutX="724.0" layoutY="843.0" prefHeight="27.0" prefWidth="119.0" text="赠饮单数:">
+         <font>
+            <Font name="STXihei" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="zengyin" layoutX="856.0" layoutY="847.0" prefHeight="19.0" prefWidth="65.0" text="错误   单" />
+      <DatePicker fx:id="timecheck" layoutX="747.0" layoutY="91.0" />
+   </children>
+</AnchorPane>

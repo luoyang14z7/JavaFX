@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="89.0" layoutY="128.0" prefHeight="20.0" prefWidth="423.0" text="本系统以整洁、易操作的设计特点应用于轻量级商家使用。">
+         <font>
+            <Font name="STXihei" size="16.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="51.0" prefHeight="19.0" prefWidth="405.0" text="关于收银点单系统" textAlignment="CENTER">
+         <font>
+            <Font name="STKaiti" size="28.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="168.0" prefHeight="20.0" prefWidth="423.0" text="主要应用于奶茶店、咖啡店、甜品店等店面，因系统当前">
+         <font>
+            <Font name="STXihei" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="208.0" prefHeight="20.0" prefWidth="423.0" text="版本为1.0,如您遇到疑问、故障或有任何建议。">
+         <font>
+            <Font name="STXihei" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="273.0" prefHeight="22.0" prefWidth="332.0" text="请联系我：86-25-XXXXXXXX">
+         <font>
+            <Font name="STXihei" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="316.0" layoutY="375.0" prefHeight="22.0" prefWidth="270.0" text="Copyright ©  Yang,2018-2019.">
+         <font>
+            <Font name="STXihei" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
